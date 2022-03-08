@@ -45,6 +45,7 @@ def backtracking(assignment, slots, depth):
         else:
             return False
 
+groups = [['FYP1', 'p1', 's1', 's2'], ['FYP2', 'p1', 's3', 's4', 's5'], ['FYP3', 'p2', 's6', 's7']]
 subs = [['FYP1', 'c', 'Mo3', 'Mo2'], ['FYP2', 'c', 'Tu1', 'We1'], ['FYP3', 'c', 'Mo1', 'We2'], [
     'FYP4', 'c', 'Mo2', 'We4'], ['FYP5', 'c', 'Mo2', 'We5'], ['FYP6', 'c', 'Mo2', 'Mo3'], ['FYP7', 'c', 'Mo3', 'We2']]
 rooms = ['R1', 'R2', 'R3']
@@ -58,6 +59,7 @@ for sub in subs:
             slots[slot] = -1
     assignment.append([sub[0], -1, -1])
 
+print("\ngroups:", groups)
 print("\nsubs:", subs)
 print("\nrooms:", rooms)
 print("\nslots:", slots)
