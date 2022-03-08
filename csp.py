@@ -45,9 +45,14 @@ def backtracking(assignment, slots, depth):
         else:
             return False
 
+# groups: list of fyp groups - group_number, supervisor_number, student_number, ... , student_number
 groups = [['FYP1', 'p1', 's1', 's2'], ['FYP2', 'p1', 's3', 's4', 's5'], ['FYP3', 'p2', 's6', 's7']]
+
+# subs: list of group available timeslots - group_number, c(compulsory, hard constraint)/o(optional, soft constraint), available_timeslot(Mo/Tu/We/Th/Fr + session_number), ..., available timeslot(Mo/Tu/We/Th/Fr + session_number)
 subs = [['FYP1', 'c', 'Mo3', 'Mo2'], ['FYP2', 'c', 'Tu1', 'We1'], ['FYP3', 'c', 'Mo1', 'We2'], [
     'FYP4', 'c', 'Mo2', 'We4'], ['FYP5', 'c', 'Mo2', 'We5'], ['FYP6', 'c', 'Mo2', 'Mo3'], ['FYP7', 'c', 'Mo3', 'We2']]
+
+# rooms: list of rooms availble
 rooms = ['R1', 'R2', 'R3']
 
 slots = {}
